@@ -1,5 +1,5 @@
 import { Cat } from './cat.inerface';
-import { AutoInjectable } from '@tiny-nestjs/auto-injectable';
+import { AutoInjectable } from '../lib';
 
 @AutoInjectable()
 export class CatService {

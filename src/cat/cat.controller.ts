@@ -1,6 +1,6 @@
 import { Get } from '@nestjs/common';
 import { CatService } from './cat.service';
-import { AutoController } from '@tiny-nestjs/auto-injectable';
+import { AutoController } from '../lib';
 
 @AutoController()
 export class CatController {
