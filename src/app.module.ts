@@ -1,10 +1,7 @@
 import { Module } from '@nestjs/common';
-import { ComponentScan } from '@tiny-nestjs/auto-injectable';
+import { AnimalModule } from './animal/animal.module';
 
-@ComponentScan()
 @Module({
-  imports: [],
-  controllers: [],
-  providers: [],
+  imports: [AnimalModule],
 })
 export class AppModule {}
