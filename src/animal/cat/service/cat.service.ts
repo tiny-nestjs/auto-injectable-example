@@ -1,4 +1,4 @@
-import { Cat } from './cat.inerface';
+import { Cat } from '../types/cat.inerface';
 import { AutoInjectable } from '@tiny-nestjs/auto-injectable';
 
 @AutoInjectable()
