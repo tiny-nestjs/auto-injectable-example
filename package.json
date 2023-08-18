@@ -23,7 +23,8 @@
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
-    "@tiny-nestjs/auto-injectable": "^0.3.0-beta.0",
+    "@tiny-nestjs/auto-injectable": "^0.3.1-beta.2",
+    "func-loc": "^0.1.16",
     "glob": "^10.3.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"

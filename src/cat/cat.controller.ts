@@ -1,13 +1,17 @@
-import { Get } from '@nestjs/common';
+import { Get, Inject } from '@nestjs/common';
 import { CatService } from './cat.service';
-import { AutoController } from '../lib';
+import { DogService } from './dog.service';
+import { AutoController } from '@tiny-nestjs/auto-injectable';
 
 @AutoController()
 export class CatController {
-  constructor(private readonly catService: CatService) {}
+  constructor(
+    @Inject('cat') private readonly catService: CatService,
+    @Inject('dog') private readonly dogService: DogService,
+  ) {}
 
   @Get('cats')
   getCats() {
-    return this.catService.findAll();
+    return [...this.dogService.findAll(), ...this.catService.findAll()];
   }
 }
